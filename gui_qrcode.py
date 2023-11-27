@@ -9,10 +9,10 @@ root.resizable(0,0)
 root.title("Qrcode Generator")
 
 # Qrcode Image
-my_pic = Image.open("qrcode.PNG")
+my_pic = Image.open("logo/qrcode.PNG")
 resized = my_pic.resize((80, 80), Image.ANTIALIAS)
 new_pic = ImageTk.PhotoImage(resized)
-my_pic = ImageTk.PhotoImage(file="qrcode.png")
+my_pic = ImageTk.PhotoImage(file="logo/qrcode.png")
 my_label = Label(root, image=new_pic)
 my_label.place(x= 50, y = 15)
 
